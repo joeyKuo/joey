@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function over(x){
+			x.style.color="red";
+		}
+		function out(x){
+			x.style.color="black";
+		}
+        function init(){
+        	var test = document.getElementById("test");
+        	test.onclick = function(){
+        		alert("done");
+        	}
+        }
+		
+	</script>
+	<title></title>
+</head>
+<body onload="init()">
+<button onclick="alert('hi')">click</button>
+<div onmouseover="over(this)" onmouseout="out(this)" >
+im joey
+</div>
+<button id="test">test</button>
+</body>
+</html>
